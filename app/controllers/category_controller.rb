@@ -6,10 +6,17 @@ class CategoryController < ApplicationController
   def create
    @category = @user.category.new(category_params)
 if @category.save
-   render json: @user.category.all
+   render json: {category_id:@category.id, user:@category.name, token:@user.token}
 else
   render json: { message:"already have that category", categories:@user.category.all}
 end
+  end
+
+ 
+def show
+    @category = @user.category.all
+       
+    render json: @category
   end
 
 
@@ -34,11 +41,11 @@ end
   private
 
 def get_params
-     @user=User.find(params[:user_id])
+     @user=User.find_by_token(params[:token])
 end
 
     def category_params
-      params.require(:category).permit(:name)
+      params.require(:category).permit(:name, :details)
     end
 
 end

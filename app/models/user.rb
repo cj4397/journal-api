@@ -38,23 +38,38 @@ require "base64"
 # end
 
 class User < ApplicationRecord
-  include BCrypt
-  has_many :category
-  has_many :task, through: :category,  dependent: :destroy
-
+ 
+  has_many :category, dependent: :destroy
+  has_many :task, dependent: :destroy
  validates :email, presence: true, uniqueness:true
+validates :name, presence: true
 
 
-  def generate_token (email)
-    token = Base64.encode64(email+'email encryption')[0..32]
-    return token
+ include BCrypt
+
+
+
+ after_create :generate_token
+
+
+  def generate_token 
+    self.token =  SecureRandom.base64[0..32]
+    self.save
   end
 
 
-  def encrypt_password(password)
-     password = BCrypt::Password.create(password)[0..32]
+   def password
+    @password ||= Password.new(password_hash)
   end
 
+  def password=(new_password)
+  
+    @password = Password.create(new_password)
+    self.password_hash = @password
+   
+  end
 
+   
 
+  
 end

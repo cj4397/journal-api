@@ -1,6 +1,67 @@
 {
   "RSpec": {
     "coverage": {
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/app/models/category.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/spec/models/task_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/app/models/task.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/spec/models/user_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/app/models/user.rb": {
         "lines": [
           null,
@@ -43,7 +104,16 @@
           null,
           null,
           1,
+          null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
           null,
           1,
           null,
@@ -55,7 +125,15 @@
           null,
           null,
           1,
+          0,
+          null,
+          null,
           1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -63,14 +141,29 @@
           null
         ]
       },
-      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/app/models/application_record.rb": {
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/spec/requests/category_spec.rb": {
         "lines": [
           1,
+          null,
           1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/mnt/c/Users/user/Desktop/Front end projects/ruby/journal/spec/requests/task_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1689347847
+    "timestamp": 1690546868
   }
 }
